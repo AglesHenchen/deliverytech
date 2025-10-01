@@ -1,3 +1,10 @@
+package com.deliverytech.delivery_api.controller;
+import java.time.LocalDateTime;
+import java.util.Map;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
 public class HealthController {
     
     @GetMapping("/health")
@@ -22,7 +29,7 @@ public class HealthController {
     }
 
     //Record para demonstrar recurso do Java 14+
-    public record Appinfo(
+    public record AppInfo(
         String application,
         String version,
         String developer,
